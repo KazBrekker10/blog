@@ -1,7 +1,7 @@
 import './App.css';
 import { useState,useEffect } from 'react';
 import profileList from './profiles.json';
-import PersonProfile from './Components/PersonProfile'
+import {PersonProfile} from './Components/PersonProfile';
 
 function App() {
   const [profiles,setProfiles] = useState([]);
@@ -15,10 +15,11 @@ function App() {
     const newProfiles = [...profiles];
     newProfiles.splice(idProfile,1);
     setProfiles([...newProfiles])
-  }
+  } 
 
   return (
     <>
+    <h1>Hola Mundo</h1>
     {profiles.length>0?(
       <ul className="profile-list">
       {profiles.map(person=>{

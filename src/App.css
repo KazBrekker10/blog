@@ -20,15 +20,23 @@ body{
   flex-direction: column;
   gap:30px;
 }
+
+
 article {
   display: grid;
   grid-template-columns: repeat(10,1fr);
   width:80%;
   margin:0 auto;
   background-color:#fff;
-  border-radius: 10px;
+  border-radius: 12px;
   position:relative;
+  overflow:hidden;
 }
+
+.profile-list article:nth-child(2n-1){
+  direction: rtl;
+}
+
 
 article .image-container{
   grid-column: 1/4;
