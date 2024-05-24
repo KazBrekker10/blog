@@ -1,0 +1,59 @@
+[
+    {
+        "id": "1161db47a1ce41f742fd02e28d30de9b",
+        "name": "Sarah Chima",
+        "country": "Nigeria",
+        "job" : "Ingeniero de Software",
+        "workPlace": "Amazon",
+        "quote": "Da Miedo cambiar la carrera solo de que podia ganar progrmando atraves de los cientos de horas de lecciones gratuitas en freeCodCamp. Dentro de 1 año tuve un trabajo de seis cifras gracias a FreeCodeCamp cambio mi"
+    },
+    {
+        "id": "1e5883bec88564e74f630b094591ff6b",
+        "name": "Emma Bostian",
+        "country": "Suecia",
+        "job" : "Ingeniero de Software",
+        "workPlace": "Spotify",
+        "quote": "Siempre he tenido problemas para aprender Javascript. He tomado muchos cursos, pero el curso de FreeCodeCamp fue el que se quedo. Estudiar Javascrpt asi como estructuras de datos y algoritmos en freeCodeCamp me dio las habilidades y la confianza que necesitaba para cumplir mis sueños como ingeniero de software en Spotify"
+    },
+    {
+    "id": "11b49c0d594ab94f5f1ca3924c02a418",
+    "name": "Juan Pérez",   
+    "country": "España",
+    "job": "Desarrollador Web",
+    "workPlace": "Google",
+    "quote" : "Nunca pensé que podría   aprender a programar, pero gracias a los cursos gratuitos de freeCodeCamp, pude conseguir un trabajo como desarrollador web en Google. Estoy muy agradecido por la oportunidad que me brindaron."
+      },
+      {
+        "id": "68ca8091ad9d96ac2d078949c3a3637d",
+        "name": "María García",
+        "country": "México",
+        "job": "Ingeniera de Software",
+        "workPlace": "Microsoft",
+        "quote": "Siempre me ha apasionado la tecnología, pero no sabía cómo empezar una carrera en el campo. freeCodeCamp me proporcionó las habilidades y los conocimientos que necesitaba para conseguir un trabajo como ingeniera de software en Microsoft."
+      },
+      {
+        "id": "11590cbfe0396c4adb38281bc4dca644",
+        "name": "Pedro Sánchez",
+        "country": "Argentina",        
+        "job": "Científico de Datos",
+        "workPlace": "Facebook",
+        "quote": "Estaba buscando una manera de cambiar mi carrera y aprender algo nuevo. freeCodeCamp me ayudó a desarrollar las habilidades necesarias para convertirme en científico de datos y conseguir un trabajo en Facebook."
+      },
+      {
+        "id": "bb2b287d3665a06dab5034f56cfca300",
+        "name": "Ana López",
+        "country": "Colombia",
+        "job": "Analista de Datos",
+        "workPlace": "Amazon",
+        "quote": "Siempre me han gustado los números y el análisis de datos. freeCodeCamp me proporcionó las herramientas y los conocimientos que necesitaba para conseguir un trabajo como analista de datos en Amazon."
+      },
+      {
+        "id": "45416f589ca3ea1820965059d77eb658",
+        "name": "Carlos Rodríguez",
+        "country": "Perú",
+        "job": "Ingeniero de Machine Learning",
+        "workPlace": "Tesla",
+        "quote": "Me apasiona la inteligencia artificial y el aprendizaje automático. freeCodeCamp me ayudó a desarrollar las habilidades necesarias para convertirme en ingeniero de machine learning y conseguir un trabajo en Tesla."
+      }
+   
+]
