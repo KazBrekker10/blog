@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -13,6 +12,44 @@
 
 body{
   background: #ddd;
+  position:relative;
+
+}
+li{
+  list-style: none;
+}
+.App-header{
+ width:100%;
+ position:fixed;
+ z-index:100;
+ top:0;
+ left:0;
+}
+
+.App-header aside{
+  display:flex;
+  justify-content: center;
+  background-color: #eee;
+  width:100%;
+
+}
+
+.App-header aside button{
+  flex-grow:1
+}
+.App-header aside button.select{
+  background-color: #222;
+  color:#fff;
+}
+
+.container{
+  position:relative;
+  margin-top:50px;
+  width:100vw;
+}
+
+.profiles{
+  padding-bottom: 30px;
 }
 
 .profile-list{
@@ -22,7 +59,7 @@ body{
 }
 
 
-article {
+.profile-item {
   display: grid;
   grid-template-columns: repeat(10,1fr);
   width:80%;
@@ -31,46 +68,238 @@ article {
   border-radius: 12px;
   position:relative;
   overflow:hidden;
+  box-shadow: 0 0 10px #ccc;
+  min-height:300px;
 }
 
-.profile-list article:nth-child(2n-1){
+.profile-list .profile-item:nth-child(2n-1){
   direction: rtl;
 }
 
 
-article .image-container{
+.profile-item .image-container{
   grid-column: 1/4;
   
 }
 
-article img{
+.profile-item img{
   width:100%;
   height:100%;
   object-fit: cover;
   overflow:hidden;
 }
 
-article .info-container{
+.profile-item .info-container{
   grid-column: 4/10;
   padding:10px 20px;
   display:flex;
   flex-direction:column;
   justify-content: center;
+  align-items: center;
   gap:20px;
   
 }
 
-article .info-container h2, article .info-container h3{
+.profile-item .info-container h2, article .info-container h3{
   font-weight:normal;
 }
 
-article .info-container  strong{
+.profile-item .info-container  strong{
   font-weight: bold;
 }
 
-article .btn-close{
+.profile-item .btn-close{
   position:absolute;
   right:0;
   top:0;
   background:none;
+}
+
+.counter{
+  min-height: 100vh;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  background-color:#040642;
+  color:#fff;
+}
+.counter h1>span{
+  font-size:1.1em;
+}
+
+.contador{
+  font-size: 8em;
+  border: 5px solid #fff;
+  height:250px;
+  width:250px;
+  border-radius: 12px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: color .3s ease;
+}
+
+.contador.diez{
+  color: #fff200
+}
+
+.contador.cien{
+  color:#8a0b0b;
+}
+.counter button{
+  font-size: 2em;
+  width:200px;
+}
+
+.counter button:hover{
+  background-color:#7503a1;
+}
+
+.agregar{
+ background-color: #1433bb;
+}
+
+.reiniciar{
+  background-color:rgb(4, 86, 4);
+}
+
+.calculator-container{
+  background-color:#1433bb;
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+}
+
+.calculator{
+  font-size:1.3em;
+  font-weight: bolder;
+  width:500px;
+  margin:auto;
+  box-sizing: border-box;
+  padding:20px;
+  background-color:#b6e5f4;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.calculator .screen{
+  width:85%;
+  background-color:#040642;
+  padding:30px 0;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+
+.calculator .button-display{
+  display:grid;
+  grid-template-columns: repeat(4,80px);
+  grid-template-rows:repeat(5,80px);
+  grid-gap:20px;
+}
+
+.calculator-button{
+  border-radius:10px;
+}
+
+.calculator-button.number{
+  background-color:#12123e;
+}
+
+.calculator-button.operator{
+  background-color:#15370e
+}
+
+.calculator-button.clear{
+  background-color: #8a0b0b;
+}
+
+.calculator .button-display .calculator-button:last-child{
+  grid-column: 1/5;
+}
+
+.task-list{
+  display:flex;
+  flex-direction: column;
+  gap:30px;
+  background-color: #f1c1fddc;
+  margin:0 auto;
+  width:100%;
+  padding-bottom: 30px;
+}
+
+.task-list form{
+  display:flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.task-list button{
+  border-radius: 0;
+}
+
+.task-list form input{
+  border-radius: 0;
+  width:250px;
+  font-size: 1.6em;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.task-list ul{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  padding:0
+}
+
+.task-element{
+  display:flex;
+  justify-content: space-between;
+  padding:0 15px;
+  background-color: #444;
+  color:#fff;
+  padding:10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.task-element.completed{
+  background-color: #ddd;
+  color:#222
+}
+
+.task-element p{
+  font-size: 1.3em;
+  text-transform:capitalize
+}
+
+.task-element.completed p{
+  text-decoration: line-through;
+}
+
+.task-element button{
+  background:none;
+  color:#fff
+}
+
+/*media queries*/
+
+@media screen and (max-width: 600px){
+  .profile-item{
+    grid-auto-flow: column;
+  
+}
+
+.profile-item .profile-info{
+  background-color:red;
+}
+
 }

@@ -1,43 +1,39 @@
 import './App.css';
 import { useState,useEffect } from 'react';
-import profileList from './profiles.json';
-import {PersonProfile} from './Components/PersonProfile';
+import {ProfileList} from './Components/ProfileList'
+import { TaskDesk } from './Components/TaskDesk';
+import {Counter} from './Components/Counter';
+import { Calculator } from './Components/Calculator';
 
 function App() {
-  const [profiles,setProfiles] = useState([]);
-  
-  useEffect(()=>{
-    setProfiles(profileList.sort(()=> Math.random() - .5 ).slice(0,5));
-  },[]);
-
-  function deleteProfile (id){
-    const idProfile = profiles.findIndex(profile=> profile.id === id);
-    const newProfiles = [...profiles];
-    newProfiles.splice(idProfile,1);
-    setProfiles([...newProfiles])
-  } 
+  const [isShow, setShow] = useState("profiles");
 
   return (
     <>
-    <h1>Hola Mundo</h1>
-    {profiles.length>0?(
-      <ul className="profile-list">
-      {profiles.map(person=>{
-        return(
-          <PersonProfile
-            name={person.name}
-            country={person.country}
-            job={person.job}
-            workPlace={person.workPlace}
-            quote={person.quote}
-            key={person.id}
-            id = {person.id}
-            deleteProfile = {deleteProfile}
-          />
-        )
-      })}
-    </ul>
-    ):(<p>No hay perfiles cargados</p>)}
+    <header className="App-header">
+      <aside>
+        <button className={isShow=="profiles"?"select":""} onClick={()=>setShow("profiles")}>Perfiles</button>
+        <button className={isShow == "counter"?"select":""}
+        onClick={()=>{
+          setShow("counter")
+        }}
+        >Contador</button>
+        <button className={isShow == "calculator"?"select":""} onClick={()=>setShow("calculator")}>Calculadora</button>
+        <button className={isShow=="tasks"?"select":""}  onClick={()=>setShow("tasks")}>Tareas</button>
+      </aside>
+    </header>
+    <main className="container">
+    {isShow=="profiles"&&(
+      <ProfileList/>
+    )}
+    {isShow == "counter"&&(
+      <Counter/>
+    )}
+    {isShow=="calculator"&&(
+      <Calculator/>
+    )}
+   {isShow=="tasks"&&( <TaskDesk/> )}
+    </main>
     </>  
   )
 }

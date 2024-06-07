@@ -54,6 +54,45 @@
         "job": "Ingeniero de Machine Learning",
         "workPlace": "Tesla",
         "quote": "Me apasiona la inteligencia artificial y el aprendizaje automático. freeCodeCamp me ayudó a desarrollar las habilidades necesarias para convertirme en ingeniero de machine learning y conseguir un trabajo en Tesla."
-      }
+      },
+      {
+        "id": "114f639d32ea6bea94dfb2a7d436db67",
+        "name": "Pedro Sánchez",
+        "country": "Argentina",
+        "job": "Desarrollador Web",
+        "workPlace": "Microsoft",
+        "quote": "Me encanta crear sitios web y aplicaciones web. freeCodeCamp me ayudó a desarrollar las habilidades necesarias para convertirme en desarrollador web y conseguir un trabajo en Microsoft."
+      },
+      {
+        "id": "72f880ebf09bb31d4d86b58b16e36de7",
+        "name": "Ana López",
+        "country": "Colombia",
+        "job": "Científica de Datos",
+        "workPlace": "Facebook",
+        "quote": "Me apasiona el aprendizaje automático y la inteligencia artificial. freeCodeCamp me ayudó a desarrollar las habilidades necesarias para convertirme en científica de datos y conseguir un trabajo en Facebook."
+      },
+      {
+        "id": "87cb681c5548f55224b176606f8d82e6",
+        "name": "Carlos Rodríguez",
+        "country": "Perú",
+        "job": "Ingeniero de Machine Learning",
+        "workPlace": "Tesla",
+        "quote": "Me encanta trabajar con grandes conjuntos de datos y desarrollar modelos de aprendizaje automático. freeCodeCamp me ayudó a desarrollar las habilidades necesarias para convertirme en ingeniero de machine learning y conseguir un trabajo en Tesla."
+      },
+      {
+        "id": "0a2963fe91a853a623283bb5237c1078",
+        "name": "María García",
+        "country": "España",
+        "job": "Ingeniera de Software",
+        "workPlace": "Google",
+        "quote": "Me encanta programar y crear nuevas aplicaciones. freeCodeCamp me ayudó a desarrollar las habilidades necesarias para convertirme en ingeniera de software y conseguir un trabajo en Google."
+      },
+      {
+        "id": "1164ada50842f2dfbe008fab4e8728a7",
+        "name": "Juan Pérez",
+        "country": "México",
+        "job": "Analista de Datos",
+        "workPlace": "Amazon",
+        "quote": "Me apasiona el análisis de datos y la inteligencia empresarial."}
    
 ]
