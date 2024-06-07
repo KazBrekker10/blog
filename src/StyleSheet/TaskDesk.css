@@ -1,0 +1,63 @@
+.task-list{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    background-color: #f1c1fddc;
+    margin:0 auto;
+    width:100%;
+    padding-bottom: 30px;
+  }
+  
+  .task-list form{
+    display:flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
+  .task-list button{
+    border-radius: 0;
+  }
+  
+  .task-list form input{
+    border-radius: 0;
+    width:250px;
+    font-size: 1.6em;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+  
+  .task-list ul{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding:0
+  }
+  
+  .task-element{
+    display:flex;
+    justify-content: space-between;
+    padding:0 15px;
+    background-color: #444;
+    color:#fff;
+    padding:10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .task-element.completed{
+    background-color: #ddd;
+    color:#222
+  }
+  
+  .task-element p{
+    font-size: 1.3em;
+    text-transform:capitalize
+  }
+  
+  .task-element.completed p{
+    text-decoration: line-through;
+  }
+  
+  .task-element button{
+    background:none;
+    color:#fff
+  }

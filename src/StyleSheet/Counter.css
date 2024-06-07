@@ -1,0 +1,51 @@
+.counter{
+    min-height: 100vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background-color:#040642;
+    color:#fff;
+  }
+  .counter h1>span{
+    font-size:1.1em;
+  }
+  
+  .contador{
+    font-size: 8em;
+    border: 5px solid #fff;
+    height:250px;
+    width:250px;
+    border-radius: 12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: color .3s ease;
+  }
+  
+  .contador.diez{
+    color: #fff200
+  }
+  
+  .contador.cien{
+    color:#8a0b0b;
+  }
+  .counter button{
+    font-size: 2em;
+    width:200px;
+  }
+  
+  .counter button:hover{
+    background-color:#7503a1;
+  }
+  
+  .agregar{
+   background-color: #1433bb;
+  }
+  
+  .reiniciar{
+    background-color:rgb(4, 86, 4);
+  }
+  

@@ -1,6 +1,7 @@
 import {useState,useEffect} from 'react'
 import profileList from '../profiles.json';
-import {PersonProfile} from './PersonProfile'
+import {PersonProfile} from './PersonProfile';
+import '../StyleSheet/ProfileList.css'
 
 export function ProfileList(){
   const [profiles,setProfiles] = useState([]);

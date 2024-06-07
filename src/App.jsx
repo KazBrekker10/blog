@@ -20,6 +20,7 @@ function App() {
         >Contador</button>
         <button className={isShow == "calculator"?"select":""} onClick={()=>setShow("calculator")}>Calculadora</button>
         <button className={isShow=="tasks"?"select":""}  onClick={()=>setShow("tasks")}>Tareas</button>
+        <button className={isShow == "variados"?"select":""} onClick={()=>setShow("variados")}>Variados</button>
       </aside>
     </header>
     <main className="container">
@@ -33,6 +34,11 @@ function App() {
       <Calculator/>
     )}
    {isShow=="tasks"&&( <TaskDesk/> )}
+   {isShow=="variados"&&(
+    <div>
+      <h1>Variados</h1>
+    </div>
+   )}
     </main>
     </>  
   )

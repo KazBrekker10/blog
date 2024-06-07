@@ -1,5 +1,6 @@
 import {useState} from 'react';
-import {Task} from './Task'
+import {Task} from './Task';
+import '../StyleSheet/TaskDesk.css'
 
 export function TaskDesk(){
     const [tasks,setTasks] = useState([]);
